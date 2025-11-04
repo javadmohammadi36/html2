@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>forms</title>
+        <title>DIV</title>
+        <style>
+          #header  {
+                border: 3px solid blue;
+            }
+            .body {
+                border: 5px solid red;
+            }
+            .no {
+                color: red;
+            }
+            
+            .red {
+                color : red;
+            }
+        </style>
     </head>
     <body>
-        <form>
-            <fieldset>
-                <legend>اطلاعات شخصی</legend>
-            name:<input type="text" name="name" placeholder="نام"><br><br>
-            code: <input type="number" name="code" placeholder="شماره ملی" required><br><br>
-            number: <input type="number" max="10" min="2" placeholder="موبایل"><br><br>
-            </fieldset>
-            <br>
-            mail: <input type="mail" placeholder="examole@gmail.com">
-            <br><br>
-            password: <input type="password" placeholder="رمز عبور">
-            <br><br>
-            date: <input type="date"><br><br>
-            masseg: <textarea rows="5" cols="30" placeholder="متن پیام"></textarea>
-            <br><br>
-            CSS: <input type="checkbox" name="css">
-            html: <input type="checkbox" name="html">
-            php: <input type="checkbox" name="php" checked>
-            <br><br>
-            men: <input type ="radio" name="sex">
-            women: <input type="radio" name="sex">
-            <br><br>
-            <input type="submit" value="send">
-            <br>
-            <button type="buttone">ارسال</button>
-            <br>
-          
-        </form>
+            <div id="header">
+        <h3> header </h3>
+                Lorem ipsum <span class="no"> consectetur adipisicing elit. </span> adipiscing 
+                
+                Lorem ipsum <span class="red">consectetur adipisicing elit. </span>
+                
+            </div>
+        <div class="body">
+        <h3> body </h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing 
+        <h3> footer </h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing 
+        </div>
     </body>
 </html>
