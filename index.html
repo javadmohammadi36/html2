@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>form</title>
+        <title>forms</title>
     </head>
     <body>
-        <form action="#">
-            <label>name</label>
-            <input type="text" name="name">
+        <form>
+            <fieldset>
+                <legend>اطلاعات شخصی</legend>
+            name:<input type="text" name="name" placeholder="نام"><br><br>
+            code: <input type="number" name="code" placeholder="شماره ملی" required><br><br>
+            number: <input type="number" max="10" min="2" placeholder="موبایل"><br><br>
+            </fieldset>
             <br>
-            <label>code</label>
-            <input type="number" name="codmeli">
-            <br>
-            <label>phon</label>
-            <input type="number" name="phon">
-            <br>
-            <label>date</label>
-            <input type="date" name="date">
-            <br>
-            <label>massage</label>
-            <textarea rows="10" cols="30"></textarea>
-            <br>
+            mail: <input type="mail" placeholder="examole@gmail.com">
+            <br><br>
+            password: <input type="password" placeholder="رمز عبور">
+            <br><br>
+            date: <input type="date"><br><br>
+            masseg: <textarea rows="5" cols="30" placeholder="متن پیام"></textarea>
+            <br><br>
+            CSS: <input type="checkbox" name="css">
+            html: <input type="checkbox" name="html">
+            php: <input type="checkbox" name="php" checked>
+            <br><br>
+            men: <input type ="radio" name="sex">
+            women: <input type="radio" name="sex">
+            <br><br>
             <input type="submit" value="send">
+            <br>
+            <button type="buttone">ارسال</button>
+            <br>
+          
         </form>
     </body>
 </html>
